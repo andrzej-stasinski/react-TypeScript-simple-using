@@ -20,7 +20,9 @@ class PokemonSearch extends Component<User, SearchState> {
         error: false,
      }
     pokemonRef: React.RefObject<HTMLInputElement> = React.createRef()
+    // pokemonRef = React.createRef()
     onSearchClick = () => {
+        console.log(this.pokemonRef)
         // const inputValue = this.pokemonRef.current.value
         // console.log(inputValue)
         fetch(`https://pokeapi.co/api/v2/pokemon/bulbasaur`)
@@ -58,7 +60,8 @@ class PokemonSearch extends Component<User, SearchState> {
                     <img src={imageUrl} />
                 </div>
                 <div>bulbasaur, ivysaur</div>                
-                <input type='text' 
+                <input 
+                    type='text' 
                     ref={this.pokemonRef}
                 />
                 <button onClick={this.onSearchClick} className='my-button'>Search</button>
