@@ -5,9 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>App</h2>
-        {/* <PokemonSearch name='John' numberOfPokemons={5} /> */}
-        <PokemonSearch name='John' />
+        <PokemonSearch nameUser='John can choose pokemon:' />
       </header>
     </div>
   );

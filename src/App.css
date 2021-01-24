@@ -18,8 +18,15 @@ body {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.my-input {
+  padding: 5px;
+  margin-right: 5px;
+}
 .my-button {
   background-color: white;
   border: 1px solid blue;
   padding: 5px 10px;
+}
+.pokemon-img {
+  width: 200px;
 }
